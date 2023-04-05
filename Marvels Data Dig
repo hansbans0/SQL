@@ -59,3 +59,4 @@ AND alignment = "Good";
 SELECT name
 CASE WHEN popularity < 20 THEN "fanfave" 
 ELSE "regs" END "popularity" FROM marvels
+SELECT id, name FROM marvels WHERE (popularity > 20 OR alignment='good');
